@@ -1,0 +1,18 @@
+#zhongdian{
+	font-size: 1.2em;
+	font-weight:bold; 
+}
+#title{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.neirong{
+	text-indent: 25px;
+	margin: 10px;
+	padding: 0px;
+	font-size: 1.0em;
+}
+
+p{margin: 0;}

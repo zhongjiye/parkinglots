@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/sub_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrow_left" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/subscribe_title"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 中间图片 -->
+
+            <ImageView
+                android:id="@+id/sub1_parkimg"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/tingchechang" 
+                android:scaleType="fitXY"
+                />
+            <!-- 停车场信息 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sub1_parkname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="珠江新城大润发停车场"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+                <!-- 边框线 -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bark_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        style="@style/list_item_name"
+                        android:text="@string/sub_type" />
+
+                    <TextView
+                        android:id="@+id/sub1_parktype"
+                        style="@style/list_item_value"
+                        android:text="室内停车场" />
+                </LinearLayout>
+                <!-- 边框线 -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/bark_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        style="@style/list_item_name"
+                        android:text="@string/sub_address" />
+
+                    <TextView
+                        android:id="@+id/sub1_parkadd"
+                        style="@style/list_item_value"
+                        android:text="广州市珠江新城珠江大厦负一层" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- tab切换按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_margin="8dp" >
+
+                <TextView
+                    android:id="@+id/orderByHour"
+                    style="@style/left_item_check"
+                    android:text="@string/sub_hour" />
+
+                <TextView
+                    android:id="@+id/orderByDay"
+                    style="@style/right_item_uncheck"
+                    android:text="@string/sub_day" />
+            </LinearLayout>
+            <!-- ViewPage -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/sub_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="330dp" >
+            </android.support.v4.view.ViewPager>
+
+            <Button
+                android:id="@+id/sub1_sure"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_round_sure"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/sub_sure"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

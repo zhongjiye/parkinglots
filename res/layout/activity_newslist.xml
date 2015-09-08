@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.sunrise.epark.activity.NewsListActivity" >
+
+    <LinearLayout
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_color" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:background="@drawable/btn_selector"
+        android:clickable="false"    
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="130.43"
+            android:gravity="center"
+            android:text="@string/mymessage"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+           <ImageView
+               android:id="@+id/no_message"
+                android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="100dp"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:visibility="gone"
+               android:src="@drawable/no_message" />
+  <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_head"
+        android:layout_marginTop="20dp"
+        android:divider="#eeeeec"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none"
+        ptr:ptrHeaderBackground="#383838"
+        ptr:ptrHeaderTextColor="#FFFFFF" />
+</RelativeLayout>

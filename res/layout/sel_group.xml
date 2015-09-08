@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCCCCC"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    <TextView 
+        android:layout_height="50dp"
+        android:id="@+id/sel_group_text"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="套餐一"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"/>
+	<ImageView 
+	    android:id="@+id/sel_group_img"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/icon_arrow_right"/>
+</LinearLayout>

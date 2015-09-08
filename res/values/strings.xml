@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E停车</string>
+    <string name="network_off">未检测到网络连接</string>
+    <string name="generic_error">网络异常,请稍后再试</string>
+    <string name="generic_server_down">连接服务器失败</string>
+    <string name="advert">优惠推广</string>
+    <string name="advert_detail">推广详情</string>
+    <string name="yes">确定</string>
+    <string name="pftotos">照片</string>
+    <string name="move_and_suofang">裁剪照片</string>
+    <string name="aboutus">关于我们</string>
+    <string name="little_name">昵称</string>
+    <string name="little_name1">姓名</string>
+    <string name="add">新增</string>
+    <string name="user_info">我的信息</string>
+    <string name="photos">头像</string>
+    <string name="user_id">帐号</string>
+    <string name="name">姓名</string>
+    <string name="user_phone">电话</string>
+    <string name="car_id">车牌：</string>
+    <string name="car_id_add">添加车牌</string>
+    <string name="e_mail">E-mail</string>
+    <string name="pay_before">已预付金额</string>
+    <string name="pay_money">已支付</string>
+    <string name="yuan">元</string>
+    <string name="info_t1">如需更改用户信息请联系管理员</string>
+    <string name="info_t2">联系电话： 4008-123-123</string>
+    <string name="setting">设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_text1">一站式停车缴费服务</string>
+    <string name="about_text2">人性化系统,创意无限</string>
+    <string name="about_text3">便利出行,尽在日出科技</string>
+    <string name="about_copyright">Copyright © 2015</string>
+    <string name="about_company">广州日出信息科技有限公司</string>
+    <string name="copyright">版本号:V</string>
+    <string name="follow">检查更新</string>
+    <string name="update_title">更新提示</string>
+    <string name="login_again">您的账号已在其它设备登录,请重新登录</string>
+    <string name="update_imp_msg">有重要新版更新，取消更新将导致无法使用，是否下载更新？</string>
+    <string name="update_msg">有新版更新，是否下载更新？</string>
+    <string name="updating">正在更新</string>
+    <string name="update_later">以后再说</string>
+    <string name="advise">意见反馈</string>
+    <string name="advise_success">尊敬的用户您好,您的意见已成功反馈,我们将会认真读取您的意见并改进我们的服务,为您提供更好的用户体验!</string>
+    <string name="advise_fail">尊敬的用户您好,反馈内容未能成功提交,请稍后重试!</string>
+    <string name="go_away">退出登录</string>
+    <string name="confirm">确认</string>
+    <string name="tip">提示</string>
+    <string name="service">对不起,没开通当前位置的服务!</string>
+    <string name="title_gz">停车场·广州</string>
+    <string name="title_search">搜索目的地</string>
+    <string name="no">取消</string>
+    <string name="clear">清空</string>
+    <string name="exit">退出</string>
+    <string name="retry">重试</string>
+    <string name="dijiao">递交</string>
+    <string name="save">保存</string>
+    <string name="cancle">取消</string>
+    <string name="photograph">拍照</string>
+    <string name="abums">从相册选取</string>
+    <string name="detail_sc">详情</string>
+    <string name="date_tip">日期选择</string>
+    <string name="loading">数据加载中……</string>
+    <string name="return_text">返回</string>
+    <string name="subscribe_title">预约</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="confrim_change_pwd">确定修改</string>
+    <string name="in_pwd">请输入新密码</string>
+    <string name="pwd_ever">请输入原始密码</string>
+    <string name="in_pwd_again">请再次输入新密码</string>
+    <string name="complain_advise">投诉建议</string>
+    <string name="in_advise">请在此输入意见和建议</string>
+    <string name="username_or_phone">请输入用户名</string>
+    <string name="pwd">请输入密码</string>
+    <string name="pwd_again">请再次输入密码</string>
+    <string name="forget_pwd_no">忘记密码?</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="confrim_register">确定注册</string>
+    <string name="text1">注册代表同意</string>
+    <string name="text2">《用户停车协议》</string>
+    <string name="receipt">邮递发票</string>
+    <string name="jine">开票金额</string>
+    <string name="jinemax">最大金额</string>
+    <string name="ti1">邮件已发送默认邮箱</string>
+    <string name="please_In_UserInfo">请点击头像进入个人中心维护！</string>
+    <string name="please_Login">您还没登录，请先登录！</string>
+    <string name="ti2">请您前往重置新密码</string>
+    <string name="jine1">请输入发票金额</string>
+    <string name="taitou">发票抬头</string>
+    <string name="taitou1">请输入公司名称或个人</string>
+    <string name="shoujianren">收件人    </string>
+    <string name="phone">手机</string>
+    <string name="phone1">联系电话:</string>
+    <string name="connect_phone"> 4008-123-123</string>
+    <string name="diqu">所在地区</string>
+    <string name="adress">详细地址</string>
+    <string name="send_null">发票金额/开票抬头/地址电话不能为空，请重新填写</string>
+    <string name="send_double">金额必须为数字，请重新填写</string>
+    <string name="send_max_double">金额必须超过最大可开金额，请重新填写</string>
+    <string name="text_pwd">密码须包含大写、小写字母、数字,长度为6到16位请重新输入</string>
+    <string name="text_pwd_add">您两次输入的密码不一样，请重新输入</string>
+    <string name="text_pwd_null">密码不能为空，请重新输入</string>
+    <string name="text_username">用户名须为6到16位有效数字和字母，请重新输入</string>
+    <string name="text_null">用户名或密码不能为空，请重新输入</string>
+    <string name="text_email">您的邮箱输入有误，请重新输入</string>
+    <string name="text_telphone">您的电话输入有误，请重新输入</string>
+    <string name="text_carid">您的车牌输入有误，请重新输入</string>
+    <string name="send_adress">邮递地址</string>
+    <string name="youbian">邮编</string>
+    <string name="balanced">钱包余额</string>
+    <string name="stop_report">停车记录</string>
+    <string name="going">进行中 </string>
+    <string name="complete">完成</string>
+    <string name="go_stoping">我要出场</string>
+    <string name="delay_paying">延长付费</string>
+    <string name="zhifufeiyong">支付费用</string>
+    <string name="stop_money">停车费用</string>
+    <string name="stop_time">停车时长</string>
+    <string name="stop_starttime">入场时间</string>
+    <string name="stop_endtime">出场时间</string>
+    <string name="money">金额</string>
+    <string name="chongzhi">充值</string>
+    <string name="account_recharge">账户充值</string>
+    <string name="recharge_money">充值金额</string>
+    <string name="recharge_time">充值时间</string>
+    <string name="acc_detail_yuyue">购买预约</string>
+    <string name="acc_detail_taocan">购买套餐</string>
+    <string name="acc_detail_cancel">套餐取消</string>
+    <string name="acc_detail_goaway">出场支付</string>
+    <string name="bill_detail">账单明细</string>
+    <string name="acc_detail">账单详情</string>
+    <string name="zhifufinds">支付方式</string>
+    <string name="webchat">微信</string>
+    <string name="web_guanggao">安全可靠，便利快捷</string>
+    <string name="iplicy">支付宝</string>
+    <string name="iplicy_guang">支付宝，知托付</string>
+    <string name="mymessage">我的消息</string>
+    <string name="system_message">系统消息</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_register_deal">RegisterDealActivity</string>
+    <string name="title_activity_forget_pwd">ForgetPwdActivity</string>
+    <string name="title_activity_change_pwd">ChangePwdActivity</string>
+    <string name="title_activity_personal_setting">PersonalSettingActivity</string>
+    <string name="title_activity_my_car">MyCarActivity</string>
+    <string name="title_activity_my_name">MyNameActivity</string>
+    <string name="title_activity_complain_advise">ComplainAdviseActivity</string>
+    <string name="title_activity_my_message">MyMessageActivity</string>
+    <string name="title_activity_user_infos">UserInfosActivity</string>
+    <string name="title_activity_notecase_balanced">NotecaseBalancedActivity</string>
+    <string name="title_activity_notecase_chongzhi">NotecaseChongzhiActivity</string>
+    <string name="title_activity_notecase_detail">NotecaseDetailActivity</string>
+    <string name="title_activity_notecase_acc_detail">NotecaseAccDetailActivity</string>
+    <string name="title_activity_send_receipt">SendReceiptActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_parked_list">ParkedListActivity</string>
+    <string name="title_activity_stop_car_record">StopCarRecordActivity</string>
+    <string name="title_activity_stopcar_record_detail">StopcarRecordDetailActivity</string>
+    <string name="title_activity_stopcar_rem_pay">StopcarRemPayActivity</string>
+    <string name="title_activity_stopcar_detail_away_price">StopcarDetailAwayPriceActivity</string>
+    <string name="title_activity_stopcar_detail_away">StopcarDetailAwayActivity</string>
+    <string name="title_activity_stopcar_delay_pay">StopcarDelayPayActivity</string>
+    <string name="title_activity_around_search">AroundSearchActivity</string>
+    <string name="title_activity_keyword_search">PoiKeywordSearchActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_preferential_promotion">PreferentialPromotionActivity</string>
+    <string name="title_activity_my_email">MyEmailActivity</string>
+    <string name="title_activity_my_phone">MyPhoneActivity</string>
+    <string name="title_activity_my_car_add">MyCarAddActivity</string>
+
+    <!-- 导航开始 -->
+    <string name="start_navi_navi">实时导航</string>
+    <string name="navi_navi">模拟导航</string>
+    <string name="extend_title">扩展功能</string>
+    <string name="extend_navi_navi">自定义导航</string>
+    <string name="navi_empty_car">"驾   车"</string>
+    <string name="navi_empty_foot">"步   行"</string>
+    <string name="navi_start">"起    点"</string>
+    <string name="navi_middle">途经点</string>
+    <string name="navi_end">"终    点"</string>
+    <string name="navi_strategy">"策    略"</string>
+    <string name="navibar_title">路径规划</string>
+    <string name="navi_car">驾车</string>
+    <string name="navi_foot">步行</string>
+    <string name="start_hud_navi">HUD显示</string>
+    <string name="complex_function">综合展示</string>
+    <string name="app_id">55bf4e8b</string>
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+
+    <!-- 导航结束 -->
+
+
+    <!-- 预约用开始 -->
+    <string name="sub_hour">按小时</string>
+    <string name="sub_day">按天</string>
+    <string name="sub_sure">确定预约</string>
+    <string name="sub_start_time">开始时间</string>
+    <string name="sub_end_time">结束时间</string>
+    <string name="sub_licence">车牌</string>
+    <string name="sub_day_sel">天套餐</string>
+    <string name="sub_week_sel">周套餐</string>
+    <string name="sub_month_sel">月套餐</string>
+    <string name="sub_money">费用</string>
+    <string name="sub_address">地址</string>
+    <string name="sub_type">类型</string>
+    <string name="sub_list_title">预约列表</string>
+    <string name="sub_detail_tip">如果您在停车前二个小时内取消预约，将收取您%1$s的服务费用。%2$s</string>
+    <string name="sub_detail_money">（订单金额 x %s）=服务费</string>
+    <string name="sub_detail_tip1">一周取消三次预约，本周将不能预约，请您谨慎操作。</string>
+    <string name="sub_sure_enter">确认进场</string>
+    <string name="sub_cancel_enter">取消预约</string>
+    <string name="sub_cancel_title">温馨提示</string>
+    <string name="sub_cancel_tip">此次订单取消将扣除%s服务费用</string>
+    <string name="sub_cancel_t_m">&#160;&#160;&#160;&#160;订单金额</string>
+    <string name="sub_cancel_f_m">-&#160;&#160;服务费&#160;&#160;&#160;</string>
+    <string name="sub_cancel_a_m">&#160;&#160;&#160;&#160;实退金额</string>
+    <string name="sub_day_tip">选择本段套餐每天将优惠%1$s元,此次共优惠%2$s元。</string>
+    <string name="parkType_shinei">室内停车场</string>
+    <string name="parkType_shiwai">室外停车场</string>
+    <!-- 预约用 结束 -->
+
+
+    <!-- 进场 start -->
+    <string name="enter_title">进场</string>
+    <string name="enter_price">价格</string>
+    <string name="enter_chewei">车位</string>
+    <string name="enter_licence">车牌</string>
+    <string name="enter_ok">我要进场</string>
+    <string name="enter_budan">我要补单</string>
+    <!-- 进场end -->
+
+
+    <!-- 出场start -->
+    <string name="leave_title">出场</string>
+    <string name="leave_ok">确定出场</string>
+    <string name="cover_manager">请等待管理员确认</string>
+    <string name="cover_order">订单号：</string>
+    <string name="cover_order1">订单号：</string>
+    <string name="cover_budan">补单单号</string>
+    <string name="paying">付款中 请稍候</string>
+    <string name="pay_success">付款成功</string>
+    <!-- 出场end -->
+
+
+    <!-- 抽屉里面的数据 开始 -->
+    <string name="carName">粤A S1234</string>
+    <string name="users_name_phone">15050526060</string>
+    <string name="xiegang">/</string>
+    <string name="tv_discript">登录更精彩</string>
+    <string name="tv_callet">我的钱包</string>
+    <string name="tv_preferential">优惠推广</string>
+    <string name="parkNotes">停车记录</string>
+    <string name="invoice">发票邮寄</string>
+    <string name="orderList">预约列表</string>
+    <string name="choosePackage">套餐选配</string>
+    <string name="myMessage">消息推送</string>
+    <string name="systemSetting">系统设置</string>
+    <string name="parkedList">停车场列表</string>
+    <string name="et_search">搜索目的地</string>
+    <!-- 抽屉里面的数据 结束 -->
+
+
+    <!-- 地图 开始 -->
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="choose">筛选</string>
+
+    <!-- 地图 结束 -->
+
+
+    <!-- 充值及支付 -->
+    <string name="recharge_title">充值</string>
+    <string name="pay_mode">支付方式</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="pay_title">支付</string>
+    <string name="pay_sure">确认支付</string>
+    <string name="order_info">订单信息</string>
+    <string name="packet_money">钱包余额</string>
+    <string name="zhifu_money">支付金额</string>
+    <string name="totle_money">总金额 %s 元</string>
+    <string name="how_yuan">%s元</string>
+    <string name="auto_key">请输入关键字</string>
+
+    <!-- 停车场管理员 -->
+    <string name="car_manager">车辆管理</string>
+    <string name="car_not_in">未进车辆</string>
+    <string name="car_in">在场车辆</string>
+    <string name="car_in_out">进出车辆</string>
+    <string name="parkinglots">停车场</string>
+    <string name="load_more">加载更多</string>
+    <string name="preload">松手开始加载</string>
+    <string name="refresh">刷新</string>
+    <string name="refreshing">刷新中......</string>
+    <string name="prerefresh">松手开始刷新</string>
+    <string name="parkinglots_num">总车位</string>
+    <string name="parkinglots_num_empty">剩余车位</string>
+    <string name="order_search">订单输入</string>
+    <string name="ge">个</string>
+    <string name="order_record">订单记录</string>
+    <string name="order_detail">订单详情</string>
+    <string name="car_owner">车主</string>
+    <string name="mobile">手机号</string>
+    <string name="car_num">车牌号</string>
+    <string name="confirm_in">确定进场</string>
+    <string name="confirm_out">确定离场</string>
+    <string name="search_order">搜索订单</string>
+    <string name="no_data">暂无数据</string>
+    <string name="park_time">停车时长</string>
+    <string name="hour">小时</string>
+    <string name="minute">分</string>
+    <string name="car_order">车辆订单</string>
+    <string name="no_order_detail">未获取到订单详情</string>
+    <string name="no_order">未能获取到订单</string>
+    <string name="no_order_more">未能获取到更多订单</string>
+    <string name="preferential">优惠</string>
+    <string name="daohang">导航</string>
+    <string name="jingchang">进场</string>
+    <string name="tv_yuyue">申请预约</string>
+    <string name="title_activity_parked_details">ParkedDetailsActivity</string>
+    <string name="tv_detail">详情</string>
+    <string name="tv_caradress">车位</string>
+    <string name="tv_adress">地址</string>
+    <string name="tv_jinchang">进场</string>
+    <string name="btn_yuyues">预约</string>
+    <string name="del_img_sure">确定要删除照片吗?</string>
+    <string name="exit_app_sure">您确定要退出停车易吗?</string>
+    <string name="no_results">未能查询到相关数据</string>
+
+    <!-- 套餐选配 -->
+    <string name="sel_title">套餐选配</string>
+    <string name="sel_detail_title">选配</string>
+    <string name="sel_detail_tip">公司停车场%1$s,小区停车场%2$s,使用周套餐功优惠%3$s。</string>
+    <string name="tv_historys">清空所有历史记录</string>
+    <string name="distance">距离</string>
+    <string name="acs">从低到高</string>
+    <string name="desc">从高到低</string>
+    <string name="distance_limit_no">不限</string>
+    <string name="distance_limit_1">0.5公里</string>
+    <string name="distance_limit_2">1公里</string>
+    <string name="distance_limit_3">2公里</string>
+	<!-- 套餐选配 -->
+	<string name="sel_sub_title">一周套餐</string>
+	<string name="order_num">订单号&#160;%s</string>
+	<string name="remainPark">剩余车位</string>
+		<!-- 星期 -->
+	<string name="week1">周一</string>
+	<string name="week5">周五</string>
+	<string name="week6">周六</string>
+	<string name="week7">周日</string>
+	
+	<string name="yuantian">%s元/天</string>
+
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<root>
+    <type name="距离">
+        <types name="不限"></types>
+        <types name="0.5公里"></types>
+        <types name="1.0公里"></types>
+        <types name="2.0公里"></types>
+    </type>
+    <type name="价格">
+        <types name="不限"></types>
+        <types name="从高到低"></types>
+        <types name="从低到高"></types>
+    </type>
+</root>

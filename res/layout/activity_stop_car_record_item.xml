@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/one"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_below="@+id/lay_head"
+    android:layout_marginTop="10dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/stop_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:text="大润发停车场"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/stop_item_order"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="订单号 B-000234"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/stop_item_add"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:hint="越秀区 寺右新马路6号"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/text_hint" />
+
+    <TextView
+        android:id="@+id/stop_item_state"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:hint="@string/going"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/text_hint" />
+
+</RelativeLayout>

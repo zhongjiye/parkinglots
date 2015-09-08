@@ -1,0 +1,337 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.sunrise.epark.activity.UserInfosActivity" >
+
+    <LinearLayout
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_color" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_selector"
+            android:clickable="false"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="130.43"
+            android:gravity="center"
+            android:text="@string/user_info"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infopic"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/lay_head"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector_write"
+        android:clickable="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/photos"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/changeimg"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" >
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_head" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/you" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/infopic"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/zhanghu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line"
+        android:background="@drawable/btn_selector_write"
+        android:clickable="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/user_id"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/text_hint"
+            android:textSize="15sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/zhanghu"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector_write"
+        android:clickable="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/name"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/showname"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textColor="@color/text_hint"
+            android:textSize="15sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/changename"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/you" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/name"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line1"
+        android:background="@drawable/btn_selector_write"
+        android:clickable="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/phone"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/showphone"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.05"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/text_hint"
+            android:textSize="15sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/changephone"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/phoneid"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/you" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/carid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector_write"
+        android:clickable="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/sub_licence"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/showcarid"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/text_hint"
+            android:textSize="15sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/changecarid"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/you" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/carid"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line2"
+        android:background="@drawable/btn_selector_write"
+        android:clickable="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/e_mail"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/showemail"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/text_hint"
+            android:textSize="15sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/changemail"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/emailid"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/you" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/info_t1"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/info_t2"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+
+</RelativeLayout>

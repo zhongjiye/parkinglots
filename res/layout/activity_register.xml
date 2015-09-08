@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.camelot.parkinglots.RegisterActivity" >
+
+    <LinearLayout
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_color" >
+
+                       <RelativeLayout
+                           android:id="@+id/back"
+            android:layout_width="50dp"
+             android:background="@drawable/btn_selector"
+        android:clickable="false" 
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <ImageView
+                                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="130.43"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/lay_head"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/username_or_phone"
+        android:maxLength="11"
+        android:paddingLeft="20dp"
+        android:digits="1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:textColorHint="@color/text_hint" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/username"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/pwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:ems="10"
+        android:digits="1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="@string/pwd"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/text_hint" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pwd1"
+        android:background="@color/line" />
+
+    <EditText
+        android:digits="1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:id="@+id/pwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line1"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/pwd_again"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/text_hint" >
+    </EditText>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pwd2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+         android:background="@drawable/btn_selector"
+        android:clickable="false" 
+        android:text="@string/confrim_register"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout 
+        android:layout_below="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+         <TextView
+        android:id="@+id/tv_forgetpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textColor="@color/text_hint"
+        android:textSize="15sp" />
+        <TextView
+        android:id="@+id/stopdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_forgetpsw"
+        android:layout_alignBottom="@+id/tv_forgetpsw"
+        android:layout_toRightOf="@+id/tv_forgetpsw"
+        android:text="@string/text2"
+        android:textSize="15sp"
+        android:textColor="@color/main_color" /> 
+        
+        
+        
+    </RelativeLayout>
+   
+   
+
+</RelativeLayout>

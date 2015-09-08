@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <LinearLayout
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#4dc060"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/bt_search"
+            android:layout_width="241dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:hint="@string/et_search"
+            android:onClick="search"
+            android:textColorHint="#AAAAAA" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.86"
+            android:background="@drawable/btn_selector"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+         <TextView
+             android:id="@+id/history"
+             android:layout_width="match_parent"
+             android:layout_height="45sp"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/lay_head"
+             android:layout_marginTop="18dp"
+             android:text="你还没有历史记录" 
+             android:gravity="center"
+             android:background="@android:color/white"
+             android:textColor="@android:color/black"
+             android:textSize="20sp"
+             />
+      
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tv_textsize">18sp</dimen>
+    <dimen name="et_textsize">18sp</dimen>
+    <dimen name="tv_et_space_padding">100dip</dimen>
+    <dimen name="login_frame_padding">18dip</dimen>
+    <dimen name="tv_paddingLeft">10dip</dimen>
+    <dimen name="tv_paddingTop">8dip</dimen>
+    <dimen name="et_paddingRight">10dip</dimen>
+    <dimen name="btn_marginLeft">20dip</dimen>
+    <dimen name="btn_padding">10dip</dimen>
+    <dimen name="et_padding">15dip</dimen>
+    <dimen name="tv_title_textsize">27sp</dimen>
+    <dimen name="title_textsize">24sp</dimen>
+    <dimen name="tv_textsize16">16sp</dimen>
+    <dimen name="tv_textsize14">14sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

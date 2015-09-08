@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"> 
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> 
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"> 
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/start_flash" />
+
+                <TextView
+                    android:id="@+id/copy_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="12dip"
+                    android:text="科莱特出品"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/refresh_list_footer_progressbar"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_above="@+id/copy_right"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="112dp"
+                    android:indeterminateDrawable="@drawable/rotate_loading_360" />
+
+            </RelativeLayout> 
+            <View android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="#dddddd"/> 
+        </RelativeLayout> 
+    </RelativeLayout> 
+</RelativeLayout>

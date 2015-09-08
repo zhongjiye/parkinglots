@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 开始时间 -->
+    <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_start_time"/>
+	   
+	   <TextView 
+	       android:id="@+id/hour_start_time"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text=""/>
+	   <ImageView 
+	        android:layout_height="15dp"
+	        android:layout_width="wrap_content"
+	       android:layout_marginRight="8dp"
+	        android:layout_gravity="center_vertical|right"
+	        android:background="@drawable/content_arrow" />
+	</LinearLayout>
+	<TextView 
+	    android:background="@color/bark_gray"
+	    android:layout_height="1px"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="0dp"/>
+	<!-- 结束时间 -->
+	 <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_end_time"/>
+	   
+	   <TextView 
+	        android:id="@+id/hour_end_time"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text=""/>
+	   <ImageView 
+	        android:layout_height="15dp"
+	        android:layout_width="wrap_content"
+	       android:layout_marginRight="8dp"
+	        android:layout_gravity="center_vertical|right"
+	        android:background="@drawable/content_arrow" />
+	</LinearLayout>
+	<TextView 
+    android:background="@color/bark_gray"
+    android:layout_height="1px"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="8dp"/>
+	 <!-- 车辆信息 -->
+	 <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_licence"/>
+	   
+	   <TextView 
+	       android:id="@+id/hour_carName"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text="粤AF363"/>
+	  
+	</LinearLayout>
+	<TextView 
+	    android:background="@color/bark_gray"
+	    android:layout_height="1px"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="8dp"/>
+	 <!-- 费用-->
+	 <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_money"/>
+	   
+	   <TextView
+	       android:id="@+id/hour_money"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text="" />
+	  
+	</LinearLayout>
+	
+	
+</LinearLayout>

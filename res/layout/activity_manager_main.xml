@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEC" >
+
+    <LinearLayout
+        android:id="@+id/manage_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_color" >
+
+        <TextView
+            android:id="@+id/car_manage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="130.43"
+            android:gravity="center"
+            android:text="@string/car_manager"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manage_foot"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/car_manage_bg"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/linear_car_manage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/car_manage_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/car_in_out_press" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/car_in_out"
+                android:textColor="#87D192" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/car_search_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_parkinglots"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/parkinglots_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/parkinglots" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/parkinglots"
+                android:textColor="#87D192" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/car_manage_main"
+        android:name="com.sunrise.epark.fragment.CarListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/manage_foot"
+        android:layout_below="@id/manage_head" />
+
+</RelativeLayout>

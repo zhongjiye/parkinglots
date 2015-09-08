@@ -1,0 +1,104 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-libraryjars libs/picasso-2.2.0.jar
+-libraryjars libs/Msc.jar
+-libraryjars libs/libammsdk.jar
+-libraryjars libs/jpush-sdk-release1.8.0.jar
+-libraryjars libs/GifView.jar
+-libraryjars libs/base-adapter-helper-1.1.12.jar
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/Android_Navi_V1.1.2.jar
+-libraryjars libs/Android_Location_V1.3.2.jar
+-libraryjars libs/Android_2DMapApi_V2.4.1.jar
+-libraryjars libs/AMap_Services_V2.4.0.jar
+-libraryjars libs/AMap_3DMap_V2.4.1.jar
+-libraryjars libs/alipaySDK-20150610.jar
+-libraryjars libs/volly-1.0.11.jar
+
+-libraryjars libs/armeabi-v7a/libamapv304.so
+-libraryjars libs/armeabi-v7a/libamapv304ex.so
+-libraryjars libs/armeabi-v7a/libjpush180.so
+-libraryjars libs/armeabi-v7a/libmsc.so
+-libraryjars libs/armeabi-v7a/libtbt.so
+
+-libraryjars libs/armeabi/libamapv304.so
+-libraryjars libs/armeabi/libamapv304ex.so
+-libraryjars libs/armeabi/libjpush180.so
+-libraryjars libs/armeabi/libmsc.so
+-libraryjars libs/armeabi/libtbt.so
+-libraryjars libs/armeabi/libwtbt.so
+
+-libraryjars libs/arm64-v8a/libjpush180.so
+
+-keep class com.taobao.dp.DeviceSecuritySDK
+-keep class com.alipay.android.phone.mrpc.core.DefaultRpcClient
+-keep class com.squareup.okhttp.OkHttpClient
+-keep class com.squareup.okhttp.HttpResponseCache
+-keep class com.alipay.mobile.framework.service.annotation.OperationType
+-keep class com.alipay.mobile.common.transport.Transport
+-keep class com.alipay.mobile.framework.MicroApplicationContext
+-keep class com.alipay.mobile.common.rpc.RpcFactory
+-keep class com.alipay.**
+-keep class com.squareup.**
+-keep class android.support.v4.** {*;}  
+-keep interface android.support.v4.app.** {*;}  
+-keep public class * extends android.support.v4.**  
+-keep public class * extends android.app.Fragment
+-keep class com.amap.api.**  {*;}
+-keep interface com.amap.api.** {*;}
+-keep class com.amap.api.navi.model.** { *; }
+-keep public class * extends com.amap.api.**  
+-keep class com.autonavi.**  {*;}
+-keep interface com.autoavi.** {*;}  
+-keep public class * extends com.autoavi.**  
+-keep class com.iflytek.**{*;}
+-keep interface com.iflytek.** {*;}  
+-keep public class * extends com.iflytek.**  
+-keep class com.baidu.**{*;}
+-keep interface com.baidu.** {*;}  
+-keep public class * extends com.baidu.**  
+-keep class com.aps.**{*;}
+-keep interface com.aps.** {*;}  
+-keep public class * extends com.aps.** 
+-keep public class * extends android.support.v4.**  
+-keep public class * extends android.app.Fragment
+-keep class cn.jpush.** { *; }
+
+-dontwarn android.support.**
+-dontwarn com.sunrise.epark.**
+-dontwarn com.taobao.dp.DeviceSecuritySDK
+-dontwarn com.alipay.android.phone.mrpc.core.DefaultRpcClient
+-dontwarn com.squareup.okhttp.OkHttpClient
+-dontwarn com.squareup.okhttp.HttpResponseCache
+-dontwarn com.alipay.mobile.framework.service.annotation.OperationType
+-dontwarn com.alipay.mobile.common.transport.Transport
+-dontwarn com.alipay.mobile.framework.MicroApplicationContext
+-dontwarn com.alipay.mobile.common.rpc.RpcFactory
+-dontwarn com.amap.api.navi.model.AMapNaviCamera
+-dontwarn com.amap.api.mapcore2d.MapMessage
+-dontwarn com.alipay.mobile.framework.LauncherApplicationAgent
+-dontwarn com.alipay.mobile.common.rpc.Config
+-dontwarn com.alipay.android.phone.mrpc.core.RpcClient
+-dontwarn com.alipay.android.phone.mrpc.core.RpcParams
+-dontwarn com.taobao.dp.client.IInitResultListener
+-dontwarn com.alipay.mobile.common.rpc.Config
+-dontwarn com.taobao.dp.client.IInitResultListener

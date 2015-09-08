@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:text="@string/tip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/et_textsize" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_below="@+id/title" >
+
+        <TextView
+            android:id="@+id/dialog_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="0dip"
+            android:background="@color/white"
+            android:gravity="left"
+            android:paddingLeft="30dip"
+            android:paddingTop="35dip"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45dip"
+        android:layout_marginRight="45dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/relayout1"
+         >
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/delete_disable_btn"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/sure_btn_bg"
+            android:text="@string/yes"
+            android:textColor="@color/blue_button">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/delete_disable_btn"
+            android:layout_width="0dip"
+            android:layout_marginLeft="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/delete_btn_bg"
+            android:text="@string/no"
+            android:textColor="@color/red_button">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

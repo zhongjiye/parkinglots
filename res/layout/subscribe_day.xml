@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_height="50dp"
+        android:background="@color/background_color"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/sub_day_day"
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:background="@drawable/gray_cover"
+            android:text="@string/sub_day_sel"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            />
+        <Button 
+            android:id="@+id/sub_day_week"
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:background="@drawable/gray_cover"
+            android:text="@string/sub_week_sel"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_weight="1"
+            />
+        <Button 
+            android:id="@+id/sub_day_month"
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:background="@drawable/gray_cover"
+            android:text="@string/sub_month_sel"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <ImageView 
+		        android:id="@+id/sub_day_1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:src="@drawable/bg_up"/>
+		    <ImageView 
+		         android:id="@+id/sub_day_2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:visibility="invisible"
+		        android:src="@drawable/bg_up"/>
+		    <ImageView 
+		         android:id="@+id/sub_day_3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:visibility="invisible"
+		        android:src="@drawable/bg_up"/>
+		</LinearLayout>
+        <TextView
+            android:id="@+id/sub_day_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gray_cover"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sub_day_tip" />
+
+    </LinearLayout>
+    
+    <!-- 开始时间 -->
+    <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_start_time"/>
+	   
+	   <TextView 
+	       android:id="@+id/day_start_time"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text=""/>
+	   <ImageView 
+	        android:layout_height="15dp"
+	        android:layout_width="wrap_content"
+	       android:layout_marginRight="8dp"
+	        android:layout_gravity="center_vertical|right"
+	        android:background="@drawable/content_arrow" />
+	</LinearLayout>
+	<TextView 
+	    android:background="@color/bark_gray"
+	    android:layout_height="1px"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="0dp"/>
+	<!-- 结束时间 -->
+	 <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_end_time"/>
+	   
+	   <TextView 
+	       android:id="@+id/day_end_time"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text=""/>
+	   <ImageView 
+	       android:id="@+id/day_end_img"
+	        android:layout_height="15dp"
+	        android:layout_width="wrap_content"
+	       android:layout_marginRight="8dp"
+	        android:layout_gravity="center_vertical|right"
+	        android:background="@drawable/content_arrow" />
+	</LinearLayout>
+	<TextView 
+    android:background="@color/bark_gray"
+    android:layout_height="1px"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="8dp"/>
+	 <!-- 车辆信息 -->
+	 <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_licence"/>
+	   
+	   <TextView 
+	       android:id="@+id/day_carName"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text="粤AF363"/>
+	  
+	</LinearLayout>
+	<TextView 
+	    android:background="@color/bark_gray"
+	    android:layout_height="1px"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="8dp"/>
+	 <!-- 费用-->
+	 <LinearLayout
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+	         
+	   <TextView 
+	       style="@style/list_item_name"
+	       
+	       android:text="@string/sub_money"/>
+	   
+	   <TextView 
+	       android:id="@+id/day_money"
+	       style="@style/list_item_value"
+	       android:layout_weight="2"
+	       android:text=""/>
+	  
+	</LinearLayout>
+	
+	
+</LinearLayout>

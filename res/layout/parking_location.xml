@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:weightSum="27" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="26"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <android.support.v4.widget.DrawerLayout
+                    android:id="@+id/drawLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <!-- 用来盛放内容 -->
+
+                    <FrameLayout
+                        android:id="@+id/contentContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#4dc060" >
+
+                            <ImageView
+                                android:id="@+id/open"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="18dp"
+                                android:gravity="center"
+                                android:src="@drawable/personal_selector" />
+
+                            <TextView
+                                android:id="@+id/tv_parkGZ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="@string/title_gz"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" 
+                                android:background="@drawable/btn_selector"
+                                android:clickable="false"
+                                />
+
+                            <ImageView
+                                android:id="@+id/parking_list"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="18dp"
+                                android:gravity="center"
+                                android:src="@drawable/topbar_selector" />
+                        </RelativeLayout>
+
+                        <!-- 地图显示 -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <com.amap.api.maps.MapView
+                                android:id="@+id/mapView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:paddingTop="50dp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="50dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center" >
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_search"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="@drawable/icon_search_bg" >
+
+                                    <ImageView
+                                        android:id="@+id/bt_search"
+                                        android:layout_width="40dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/icon_findpark_search_tag" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_toRightOf="@id/bt_search"
+                                        android:gravity="center_vertical|left"
+                                        android:text="@string/title_search"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lk"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="95dp"
+                                android:gravity="right" >
+
+                                <CheckBox
+                                    android:id="@+id/traffic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:button="@drawable/triffic_seletor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:id="@+id/parkDetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:gravity="left"
+                                    android:orientation="vertical" >
+
+                                    <ImageView
+                                        android:id="@+id/iv_orders"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:src="@drawable/btn_car_selector"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_location"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/loction_selector" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/include_detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone" >
+
+                                    <include
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        layout="@layout/parked_detail" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/icon_dingwei"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                    <!-- 用来盛放抽屉 -->
+
+                    <LinearLayout
+                        android:id="@+id/drawContainer"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left" >
+
+                        <include
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            layout="@layout/drawer_left_login" />
+                    </LinearLayout>
+                </android.support.v4.widget.DrawerLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

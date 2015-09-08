@@ -1,0 +1,323 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.sunrise.epark.activity.SendReceiptActivity" >
+
+    <LinearLayout
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_color" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:background="@drawable/btn_selector"
+        android:clickable="false" 
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/receipt"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/maxmoney"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lay_head"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/jinemax"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/maxjine"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/text_color_light"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="元"
+            android:paddingLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/text_color_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/maxmoney"
+        android:background="@color/line" />
+    <LinearLayout
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/jine"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/jine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/jine1"
+            android:paddingLeft="20dp"
+             android:digits="1234567890."
+            android:textColorHint="@color/text_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/money"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/rchead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/taitou"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/taitou1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/taitou1"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/text_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rchead"
+        android:layout_marginTop="20dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/shoujianren"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+
+       <EditText
+           android:id="@+id/name"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@null"
+           android:gravity="center_vertical"
+           android:paddingLeft="20dp"
+           android:text=""
+           android:textColor="@color/text_color_light"
+           android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/recp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/recphone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line1"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/phone"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+			<EditText 
+    	 android:id="@+id/telphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/text_color_light"
+            android:textSize="16sp"
+            android:background="@null"
+    		android:digits="1234567890"
+    		android:inputType="number"
+    />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/recphone"
+        android:background="@color/line" />
+
+
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line2"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/adress"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+             android:textColor="@color/text_color_light"
+            android:paddingLeft="20dp" 
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/address"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/postid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line4"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="28dp"
+            android:text="@string/youbian"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ic"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:digits="0987654321"
+            android:textSize="16sp"
+            android:paddingLeft="20dp" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/postid"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+                android:background="@drawable/btn_selector"
+        android:clickable="false"
+        android:text="@string/dijiao"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

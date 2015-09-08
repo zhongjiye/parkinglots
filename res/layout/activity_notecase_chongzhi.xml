@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".activity.NotecaseChongzhiActivity" >
+
+    <LinearLayout
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4dc060" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:background="@drawable/btn_selector"
+        android:clickable="false"    
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lay_head"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/money"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/moneyy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:paddingRight="20dp"
+            android:text=""
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_hint"
+            android:textSize="18sp" >
+            </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/money"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/zhifufinds"
+        android:textColor="@color/text_hint"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/webmoney"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/weichat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/weixin" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/weichat"
+            android:gravity="center"
+            android:text="@string/webchat"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv1"
+            android:gravity="center"
+            android:text="@string/web_guanggao"
+            android:textColor="@color/text_hint"
+            android:textSize="18sp" />
+
+ 			<ImageView
+                android:id="@+id/radiobtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_pay_click"
+                android:button="@null"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/webmoney"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/zhifubao"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/line"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/zhifu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zhifubao" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/zhifu"
+            android:gravity="center"
+            android:text="@string/iplicy"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/tv2"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv2"
+            android:gravity="center"
+            android:text="@string/iplicy_guang"
+            android:textColor="@color/text_hint"
+            android:textSize="18sp" />
+
+     			<ImageView
+                android:id="@+id/radiobtn2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_pay_normal"
+                android:button="@null"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confrim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/zhifubao"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+               android:background="@drawable/btn_selector"
+        android:clickable="false"
+        android:text="@string/yes"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
